@@ -1,0 +1,40 @@
+.isactive {
+    transform: scale(0.98);
+    background-color: darkgray;
+}
+.editor {
+    background-color: #1f1f1f;
+    outline: solid darkgray ;
+}
+.titleEdit{
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    color: white;
+    box-sizing: border-box;
+    background-color: #1f1f1f;
+    outline: solid darkgray;
+    display: block;
+    position: relative;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    white-space: break-spaces;
+    -webkit-font-variant-ligatures: none;
+    font-variant-ligatures: none;
+    font-feature-settings: "liga" 0;
+    border-width: 0px;
+    width: 100%;
+}
+.save {
+    color: cadetblue;
+    background: none;
+    border: none;
+    font-size: 18px;
+    position:relative;
+    cursor:pointer;
+    float: right;
+}
+.save:hover {
+    text-decoration: underline;
+}
