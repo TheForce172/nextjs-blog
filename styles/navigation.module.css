@@ -1,0 +1,84 @@
+#fakeButton{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    height: 25px;
+    min-height: 25px
+}
+#mainNav{
+    height: 100%; /* 100% Full-height */
+    width: 0%;
+    background-color: rgb(31, 29, 29);
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 15px;
+}
+
+.logo{
+    display: none;
+}
+
+.navOpen{
+    top: 0; /* Stay at the top */
+    left: 0;
+    padding: 23px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    background-color: black;
+    border: none;
+    z-index: 1; /* Stay on top */
+    position: fixed; /* Stay in place */
+}
+.navClose{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    background-color: rgb(31, 29, 29);
+    border: none;
+}
+.navLink {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.navLink:hover {
+    color: #f1f1f1;
+}
+@media screen and (min-device-width: 641px) {
+    #mainNav{padding-top: 30px; /* Place content 60px from the top */}
+}
+
+@media screen and (min-device-width: 1008px) {
+    #mainNav
+    {
+        width: 250px;
+        border-right: solid darkgrey 4px;
+    }
+    .logo{
+        display: block;
+        margin-left: 35px;
+    }
+}

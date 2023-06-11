@@ -2,7 +2,7 @@
 import { useEditor, EditorContent } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 import Image from 'next/image'
-import styles from '../styles/editor.module.css'
+import styles from '@/styles/editor.module.css'
 import React from 'react'
 import { useRouter } from 'next/navigation'
 import { savePost } from '@/app/blog/actions.js'

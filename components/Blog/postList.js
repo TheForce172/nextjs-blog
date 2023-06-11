@@ -1,4 +1,3 @@
-'use client'
 import Link from 'next/link';
 import utilStyles from '../../styles/utils.module.css';
 export default function PostList({ allPosts }){
@@ -10,7 +9,7 @@ export default function PostList({ allPosts }){
         <ul className={utilStyles.list}>
             {data.map(({ id, date, title }) => (
                 <li className={utilStyles.listItem} key={id}>
-                    <Link href={`/posts/${id}`}>{title}</Link>
+                    <Link href={`blog/post/${id}`}>{title}</Link>
                 <br />
                 <small className={utilStyles.lightText}>
                 <Date dateString={date} />

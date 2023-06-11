@@ -1,15 +1,15 @@
-import Editor from "@/components/Blogeditor";
+'use client'
+import Editor from "@/components/Blog/Blogeditor";
 import Layout from "@/components/layout";
-import styles from "../../../styles/editor.module.css"
 import React from "react";
-var text
 
-async function updateText(newtext) {
-    textContent = newtext
+export const metadata ={
+    title: "The Snake Den - Write Post",
+    charset: "utf-8"
 }
 
-
 export default async function Page() {
+    //TODO user validation
     return(
         <Layout>
             <Editor/>

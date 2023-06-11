@@ -1,13 +1,13 @@
-import Layout, { siteTitle } from '../components/layout';
+import Layout from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 
 export const metadata = {
-  title: {siteTitle},
+  title: "The Snake Den",
+  charset: "utf-8"
 }
 
 export default function Home() {
   return (
-    <Layout home>
       <section className={utilStyles.headingMd}>
         <p>[Your Self Introduction]</p>
         <p>
@@ -15,6 +15,5 @@ export default function Home() {
         <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
-    </Layout>
   );
 }
