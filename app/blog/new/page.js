@@ -1,6 +1,4 @@
-'use client'
 import Editor from "@/components/Blog/Blogeditor";
-import Layout from "@/components/layout";
 import React from "react";
 
 export const metadata ={
@@ -11,8 +9,6 @@ export const metadata ={
 export default async function Page() {
     //TODO user validation
     return(
-        <Layout>
             <Editor/>
-        </Layout>
     );
 }
