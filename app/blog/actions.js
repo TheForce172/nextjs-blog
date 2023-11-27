@@ -20,7 +20,7 @@ export async function savePost(data) {
     //console.log(req);
     //console.log(reqData.title);
     //console.log(reqData.text);
-    const title = newData.title;
+    const title = data.title;
     const date = new Date();
     let bodyObject = {title: title, content: content, date: date, id : id, lastEdited : date, edited : false};
     let myPost = await db.collection("Posts").insertOne(bodyObject);
